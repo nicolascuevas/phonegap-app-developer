@@ -22,6 +22,9 @@
     <platform name="ios">
         <preference name="Orientation" value="all" />
         <preference name="AutoHideSplashScreen" value="false" />
+        <preference name="StatusBarOverlaysWebView" value="false" />
+        <preference name="StatusBarBackgroundColor" value="#ffffff" />
+        <preference name="StatusBarStyle" value="default" />
         <icon height="167" src="resources/icon/ios/icon-83.5@2x.png" width="167" />
         <icon height="76" src="resources/icon/ios/icon-76.png" width="76" />
         <icon height="152" src="resources/icon/ios/icon-76@2x.png" width="152" />
@@ -62,6 +65,7 @@
         <icon density="xhdpi" src="resources/icon/android/icon-96.png" />
         <resource-file src="google-services.json" target="google-services.json" />
     </platform>
+    <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.1.1" />
 
     <engine name="android" spec="~6.4.0" />
     <engine name="ios" spec="^4.5.3" />
